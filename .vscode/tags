@@ -1,0 +1,15 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+App.py	../App.py	1;"	kind:file	line:1
+Index	../App.py	/^def Index():$/;"	kind:function	line:13
+add_contact	../App.py	/^def add_contact():$/;"	kind:function	line:17
+app	../App.py	/^app = Flask(__name__)$/;"	kind:variable	line:4
+delete_contact	../App.py	/^def delete_contact():$/;"	kind:function	line:38
+edit_contact	../App.py	/^def edit_contact():$/;"	kind:function	line:34
+mysql	../App.py	/^mysql = MySQL(app)$/;"	kind:variable	line:9
