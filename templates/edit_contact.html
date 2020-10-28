@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<body>
+    <form action="/update_contact/{{contact.0}}" method="POST">
+        <ul>
+            <li>
+                <label for="name">Nombre del contacto:</label>
+                <input type="text" id="name" name="contact_name" placeholder="Ejemplo: El tuercas" value="{{contact.1}}">
+            </li>
+            <li>
+                <label for="phone">Número de teléfono:</label>
+                <input type="text" id="phone" name="contact_phone" placeholder="No es obligatorio ponerlo" value="{{contact.2}}">
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="contact_email" placeholder="Es opcional añadirlo" value="{{contact.3}}">
+            </li>
+            <li>
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" name="contact_address" placeholder="Esto también es opcional" value="{{contact.4}}">
+            </li>
+            <li>
+                <label for="relationship">Parentesco:</label>
+                <input type="text" id="relationship" name="contact_relationship" placeholder="Tú decides si ponerlo o no" value="{{contact.6}}">
+            </li>
+            <li>
+                <label for="pending">Pendientes:</label>
+                <textarea id="pending" name="contact_pending">{{contact.5}}</textarea>
+            </li>
+            <li>
+                <button name="addContactButton" type="submit">
+                    Guardar
+                </button>
+            </li>
+        </ul>
+    </form>

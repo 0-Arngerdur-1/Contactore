@@ -54,12 +54,24 @@
                 <th>Dirección</th>
                 <th>Parentesco</th>
                 <th>Pendientes</th> 
+                <th>Operaciones</th> 
             </tr>
         </thead>
         <tbody>
+            {% for contact in contacts %}
             <tr>
-                
+                <td>{{contact.1}}</td> 
+                <td>{{contact.2}}</td>
+                <td>{{contact.3}}</td>
+                <td>{{contact.4}}</td>
+                <td>{{contact.6}}</td>
+                <td>{{contact.5}}</td>
+                <td>
+                    <a href="/edit/{{contact.0}}">Editar</a>
+                    <a href="/delete_contact/{{contact.0}}">Eliminar</a>
+                </td>
             </tr>
+            {% endfor %}
         </tbody>
     </table>
 </body>
