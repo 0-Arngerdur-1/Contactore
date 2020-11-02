@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="col-md-7 offset-md-2">
+    <div class="card card-body">
+        <div class="col-md-7">
+            <table class="table table-condensed table-bordered bg-success table-sm">
+                <thead>
+                    <tr>
+                        <th colspan="7">
+                            <h1>Mis Contactos</h1>
+                        </th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Telefono</th>
+                        <th>Email</th>
+                        <th>Dirección</th>
+                        <th>Parentesco</th>
+                        <th>Pendientes</th>
+                        <th>Operaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for contact in contacts %}
+                    <tr>
+                        <td>{{contact.1}}</td>
+                        <td>{{contact.2}}</td>
+                        <td>{{contact.3}}</td>
+                        <td>{{contact.4}}</td>
+                        <td>{{contact.6}}</td>
+                        <td>{{contact.5}}</td>
+                        <td>
+                            <a href="/edit/{{contact.0}}" class="btn btn-info">Editar</a>
+                            <a href="/delete_contact/{{contact.0}}" class="btn btn-danger">Eliminar</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
