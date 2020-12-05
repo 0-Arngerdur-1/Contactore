@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contactore</title>
-    <link rel="stylesheet"
-          href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/sketchy/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
   </head>
   <body>
-    <nav class="navbar navbar-dark" style="background-color: #f8782f;">
+    <nav class="navbar navbar-dark" style="background-color: #f8782f">
       <a class="navbar-brand" href="/">CONTACTORE</a>
       <form class="form-inline" action="/search_contact" method="POST">
         <input
@@ -39,7 +44,6 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
-    <script src="{{ url_for('static', filename='js/main.js') }}"
-    ></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
   </body>
 </html>
