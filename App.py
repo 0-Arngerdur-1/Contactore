@@ -5,7 +5,7 @@ app = Flask(__name__)
 # MySQL connection
 app.config["MYSQL_HOST"] = "localhost"
 app.config["MYSQL_USER"] = "root"
-app.config["MYSQL_PASSWORD"] = "password"
+app.config["MYSQL_PASSWORD"] = "onl1- F0r"
 app.config["MYSQL_DB"] = "contactore"
 mysql = MySQL(app)
 
@@ -45,7 +45,7 @@ def add_contact():
             ),
         )
         mysql.connection.commit()
-        flash("¡Contacto agregado con exito! :)")
+        flash("¡Contacto agregado con éxito! :)")
         return redirect(url_for("Index"))
 
 
