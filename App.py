@@ -45,7 +45,7 @@ def add_contact():
             ),
         )
         mysql.connection.commit()
-        flash("¡Contacto agregado con exito! :)")
+        flash("¡Contacto agregado con éxito! :)")
         return redirect(url_for("Index"))
 
 
